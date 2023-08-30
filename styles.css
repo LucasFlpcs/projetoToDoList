@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        90deg,
+        rgba(65, 184, 131,1) 0%,
+        rgba(0, 212, 255,1)100%
+    );
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container {
+    border: 5px solid #ffffff;
+    width: 35%;
+    padding: 30px  40px;
+    min-width: 500px;
+    border-radius: 10px;
+   
+    
+}
+
+.List{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+    
+
+}
+
+.task-list{
+      
+    width: 100%;    
+    margin-top: 50px;
+    height: 50px;
+   background-color: #f2f2f2;
+   box-shadow: 1px 4px 10px rgba(0, 0 , 0, 0.2) ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 15px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   font-size: 20px;
+
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task-list:hover img { 
+    opacity: 1;
+}
+
+.input{
+    flex: 3;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 12px;
+    width: 300px;
+    height: 50px;
+    
+}
+
+.btnadd{
+    flex: 1;
+    border-radius: 5px;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.btnadd:hover{
+    opacity: 0.8;
+}
+
+.btnadd:active{
+    opacity: 0.5;
+
+}
+
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
